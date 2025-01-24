@@ -7,7 +7,8 @@
 ## **项目简介**  
 本项目是一个基于 **Vue.js** 和 **Element UI** 开发的单页面应用，旨在帮助用户高效管理和查阅面试题目。系统支持 Word 文档解析，自动提取问题与答案，并提供强大的搜索和便捷的浏览体验。
 
-![image-20250124113018319](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250124113018319.png)
+![image](https://github.com/user-attachments/assets/24fa0f7b-fc9e-4e0c-a6b5-4f211cb43ac1)
+
 
 ---
 
