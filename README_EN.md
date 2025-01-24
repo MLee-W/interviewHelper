@@ -7,6 +7,8 @@ An efficient interview question management system with document parsing, keyword
 ## **Project Overview**  
 This project is a single-page application developed using **Vue.js** and **Element UI**, designed to help users efficiently manage and review interview questions. The system supports Word document parsing, automatically extracting questions and answers, and provides powerful search and convenient browsing features.
 
+![image-20250124113032407](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250124113032407.png)
+
 ---
 
 ## **Key Features**
