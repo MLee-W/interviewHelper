@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.interview.helper.dao.QuestionMapper">
+    
+    <insert id="batchInsert" parameterType="java.util.List">
+        INSERT INTO question (title, content)
+        VALUES
+        <foreach collection="questions" item="item" separator=",">
+            (#{item.title}, #{item.content})
+        </foreach>
+    </insert>
+    
+    <select id="findAll" resultType="com.interview.helper.entity.Question">
+        SELECT id, title, content, create_time, update_time
+        FROM question
+        ORDER BY create_time DESC
+        LIMIT #{offset}, #{pageSize}
+    </select>
+    
+    <select id="count" resultType="int">
+        SELECT COUNT(*) FROM question
+    </select>
+    
+    <select id="searchQuestions" resultType="com.interview.helper.entity.Question">
+        SELECT 
+            id, 
+            title, 
+            content,
+            create_time,
+            update_time
+        FROM question
+    </select>
+</mapper> 
